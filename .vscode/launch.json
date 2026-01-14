@@ -1,0 +1,55 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "DataGenerator",
+      "request": "launch",
+      "mainClass": "org.DataGenerator",
+      "projectName": "llms"
+    },
+    {
+      "type": "java",
+      "name": "MethodContent",
+      "request": "launch",
+      "mainClass": "org.astjimple.MethodContent",
+      "projectName": "llms"
+    },
+    {
+      "type": "java",
+      "name": "DiffWithLineRanges",
+      "request": "launch",
+      "mainClass": "org.astjimple.DiffWithLineRanges",
+      "projectName": "llms"
+    },
+    {
+      "type": "java",
+      "name": "AstToJimpleBridge",
+      "request": "launch",
+      "mainClass": "org.astjimple.AstToJimpleBridge",
+      "projectName": "llms"
+    },
+    {
+      "type": "java",
+      "name": "RipParser",
+      "request": "launch",
+      "mainClass": "org.rip.RipParser",
+      "projectName": "llms"
+    },
+    {
+      "type": "java",
+      "name": "Launch Java Program",
+      "request": "launch",
+      "mainClass": ""
+    },
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    }
+  ]
+}
