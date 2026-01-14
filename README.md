@@ -1,7 +1,7 @@
 # ParseRIP: Multiview Program-Graph Construction and Static Evidence Extraction (CFG/DFG + RIP-Structured Input)
 
 Anonymous artifact link:  
-**https://anonymous.4open.science/r/ParseRIP-B773/**
+**https://anonymous.4open.science/r/ParseRIP-8B58/**
 
 This repository provides a prototype toolchain that aligns **source-level differences (original p vs. mutant m)** to **Jimple IR**, and extracts static evidence around mutation-relevant paths (CFG/DFG/path predicates/control dependencies/propagation and kill information, etc.). It ultimately produces a **unified structured JSON input** that can be directly consumed by different types of LLMs. Optionally, it can also generate `.dot/.jpg` visualizations of AST/CFG/DFG to help reviewers quickly sanity-check the results.
 
@@ -37,7 +37,7 @@ Many Java files in this repo contain `public static void main(String[] args)`. T
 
 > Reviewers can also search for `public static void main` in the IDE to list all runnable drivers. Below are the most important and commonly used ones.
 
-### 3.1 `org.rip.RipParser` 
+### 3.1 `org.rip.RipParser`
 
 **Purpose**: End-to-end analysis of one (p,m) pair. Produces `graph/output.json` and optionally AST/CFG/DFG/IR artifacts.
 
@@ -97,7 +97,7 @@ Many Java files in this repo contain `public static void main(String[] args)`. T
 
 ---
 
-### 3.5 `org.astjimple.AstToJimpleBridge` 
+### 3.5 `org.astjimple.AstToJimpleBridge`
 
 **Purpose**: Validate the Soot/Jimple alignment and analysis in a more “low-level” manner than `RipParser` (useful for debugging Soot/path/graph issues).
 
@@ -110,7 +110,7 @@ Many Java files in this repo contain `public static void main(String[] args)`. T
 
 ---
 
-### 3.6 `org.utils.DotToImageConverter` 
+### 3.6 `org.utils.DotToImageConverter`
 
 **Purpose**: Batch-convert `graph/*.dot` to images so reviewers can open and inspect them directly.
 
