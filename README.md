@@ -1,8 +1,5 @@
 # ParseRIP: Multiview Program-Graph Construction and Static Evidence Extraction (CFG/DFG + RIP-Structured Input)
 
-Anonymous artifact link:  
-**https://anonymous.4open.science/r/ParseRIP-8B58/**
-
 This repository provides a prototype toolchain that aligns **source-level differences (original p vs. mutant m)** to **Jimple IR**, and extracts static evidence around mutation-relevant paths (CFG/DFG/path predicates/control dependencies/propagation and kill information, etc.). It ultimately produces a **unified structured JSON input** that can be directly consumed by different types of LLMs. Optionally, it can also generate `.dot/.jpg` visualizations of AST/CFG/DFG to help reviewers quickly sanity-check the results.
 
 ---
